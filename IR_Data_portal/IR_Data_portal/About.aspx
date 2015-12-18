@@ -8,6 +8,6 @@
         About
     </h2>
     <p>
-        Put content here.
+        Now this project is managed over GitHub, clone using path: ssh://git@github.com:vertika12/CventIR_Portal.git or https://github.com/vertika12/CventIR_Portal.git .
     </p>
 </asp:Content>
