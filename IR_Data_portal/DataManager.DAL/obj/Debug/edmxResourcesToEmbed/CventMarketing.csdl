@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="cventModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AccountBase">
+    <Key>
+      <PropertyRef Name="Account_ID" />
+    </Key>
+    <Property Name="Account_ID" Type="Guid" Nullable="false" />
+    <Property Name="Website" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="Account" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Company___EventInfo" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="Segment" Type="String" MaxLength="510" FixedLength="false" Unicode="true" />
+    <Property Name="Industry" Type="String" MaxLength="510" FixedLength="false" Unicode="true" />
+    <Property Name="Industry_Sub_Segment" Type="String" MaxLength="510" FixedLength="false" Unicode="true" />
+    <Property Name="Revenue_in_millions" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Employees" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyURL" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="MailingStreet" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MailingCity" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Mailing_StateProvince" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Mailing_Zip" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="MailingCountry" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Continent" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="AccountPhone" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Current__Event_Name" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="Current_Event_Fee" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Event_Charge" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Current_Event_URL" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="EventType" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NumberofEvents" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="RegProcess" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Event_Competitor_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Biggest_Event_Type" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EventFee" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="MobileQualified" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Categorization" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Sourcing" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="SleepingRooms_RoomNights_for_Event1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="VenueType_1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="VenueName_1" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="VenueLocation_1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Zip_1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Ever_used_MobileApp_CC" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="MobileAppOS" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="MobileAppLink" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="Developer" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EventOccurrence" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="EventDuration" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="HaveBreakouts_CC" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="No_of_Attendees_CC" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Sponsors" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Exhibitors" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Account_Level_description" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="Company_and_Survey_Info" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SurveyName" Type="String" MaxLength="510" FixedLength="false" Unicode="true" />
+    <Property Name="Types_of_Surveys" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SurveyReports" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="SurveyLink" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="SurveyCompetitor" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Sales_BizDev" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="Competitor_SurveyLink" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="Type_of_Surveys" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Survey_ReportLink" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="Competitor_Event_URL" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="Ever_used_Mobile_App" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Event_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Event_Type_CC" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Event_Fee_CC" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="MasterVerticals" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SubVertical_CT_TM" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Vertical_CT_TM" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Current_Ticketing_Provider" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Sponsors_CT_TM" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="MobileApp_CT_TM" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Competitor_CT" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Mkt_CAT" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Current_Mobile_Provider" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="VenueCapacity" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="OnlinePresence" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Total_Service_Revenue" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Event_Planning_Registration" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="VenueSourcing" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="GroupBooking" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ExperientialMarketing" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Branding" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MobileDevelopment" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Social_and_Digital_Marketing" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Creative_Development_Services" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Parent_CompanyName" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="Parent_CompanyURL" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="No_Of_Offices" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="BigClients" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="CompetitorUsing" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="TPP_Score_Value" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="CompetitorName" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="New_BDType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="New_Chapter_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="New_Master_Abbv" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="address_2" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="fax" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="OfficersLink" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="url" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="msa" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BD_DS_Rep" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BD_PS_Rep" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BD_Tier" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NamedAccount" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BD_EMAIL_FILTER" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BD_Division" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BD_Category" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BD_Classification" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ParentAccountID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LastModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ApprovedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TeamName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="LeadSource" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Marketing_Project" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TaskPOC" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Prioritization" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="SFDCAccountID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Event_Start_Date_MM_DD_YYYY" Type="DateTime" Precision="3" />
+    <Property Name="Event_End_Date_MM_DD_YYYY" Type="DateTime" Precision="3" />
+    <Property Name="EventDate_Venue1" Type="DateTime" Precision="3" />
+    <Property Name="CurrentEventFee_Max_In_Dollars" Type="Int32" />
+    <Property Name="Average_TicketPrice_CT_TM" Type="Double" />
+    <Property Name="Facebook_Likes" Type="Int32" />
+    <Property Name="No_of_Attendees" Type="Int32" />
+    <Property Name="Number_Of_RoomNights_Booked" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="ApprovedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ContactBases" Relationship="Self.FK__ContactBa__Accou__70DDC3D8" FromRole="AccountBase" ToRole="ContactBase" />
+  </EntityType>
+  <EntityType Name="ContactBase">
+    <Key>
+      <PropertyRef Name="Contact_ID" />
+    </Key>
+    <Property Name="Contact_ID" Type="Guid" Nullable="false" />
+    <Property Name="Salutation" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="FirstName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Title" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="Prioritization" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DirectPhone" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LinkedinURL" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="LinkedinID" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="AlternatePhone" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="AlternateEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ContactInfo" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ContactLevel_description" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="TitleLevel" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="JobFunction" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TaskPOC" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="AdditionalContactInfo" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="AssignTo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EmailNotification" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="FollowUp_Open_Closed_Task" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="FollowUpTask_AssignTo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="FollowUpTask_Comment" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="FollowUpTask_Priority" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="FollowUpTask_Subject" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IRReps_Comments" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="Keywords_Group" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LeadInfo" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="LeadStatus" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="MktgContactCAT" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="MobilePhone" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="OmniCampaignID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="OmniCampaignNames" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="OmniProduct" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="OmniRegions" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="OmniSource" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Omni_Tactic_Final" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="OpenGroup_ClosedGroup" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Open_Closed_Task" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Other_SM_Urls" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="Contact_Type" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IRRep" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LastModifiedBy" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="LastModifiedOn" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ApprovedBy" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="ApprovedOn" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="TeamName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LeadSource" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MarketingProject" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="SFDCContactID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CampaignId" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Mobile" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AccountBase" Relationship="Self.FK__ContactBa__Accou__70DDC3D8" FromRole="ContactBase" ToRole="AccountBase" />
+  </EntityType>
+  <EntityType Name="AccountBase_Temp">
+    <Key>
+      <PropertyRef Name="Account_ID" />
+    </Key>
+    <Property Name="Account_ID" Type="Guid" Nullable="false" />
+    <Property Name="Website" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="Account" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Company___EventInfo" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="Segment" Type="String" MaxLength="510" FixedLength="false" Unicode="true" />
+    <Property Name="Industry" Type="String" MaxLength="510" FixedLength="false" Unicode="true" />
+    <Property Name="Industry_Sub_Segment" Type="String" MaxLength="510" FixedLength="false" Unicode="true" />
+    <Property Name="Revenue_in_millions" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Employees" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="CompanyURL" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="MailingStreet" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MailingCity" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Mailing_StateProvince" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Mailing_Zip" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="MailingCountry" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Continent" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="AccountPhone" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Current__Event_Name" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="Current_Event_Fee" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Event_Charge" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Current_Event_URL" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="EventType" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="NumberofEvents" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="RegProcess" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Event_Competitor_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Biggest_Event_Type" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EventFee" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="MobileQualified" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Categorization" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Sourcing" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="SleepingRooms_RoomNights_for_Event1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="VenueType_1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="VenueName_1" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="VenueLocation_1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Zip_1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Ever_used_MobileApp_CC" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="MobileAppOS" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="MobileAppLink" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="Developer" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EventOccurrence" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="EventDuration" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="HaveBreakouts_CC" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="No_of_Attendees_CC" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Sponsors" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Exhibitors" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Account_Level_description" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="Company_and_Survey_Info" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SurveyName" Type="String" MaxLength="510" FixedLength="false" Unicode="true" />
+    <Property Name="Types_of_Surveys" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SurveyReports" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="SurveyLink" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="SurveyCompetitor" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Sales_BizDev" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="Competitor_SurveyLink" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="Type_of_Surveys" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Survey_ReportLink" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="Competitor_Event_URL" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="Ever_used_Mobile_App" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Event_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Event_Type_CC" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Event_Fee_CC" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="MasterVerticals" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SubVertical_CT_TM" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Vertical_CT_TM" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Current_Ticketing_Provider" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Sponsors_CT_TM" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="MobileApp_CT_TM" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Competitor_CT" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Mkt_CAT" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Current_Mobile_Provider" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="VenueCapacity" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="OnlinePresence" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Total_Service_Revenue" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Event_Planning_Registration" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="VenueSourcing" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="GroupBooking" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ExperientialMarketing" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Branding" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MobileDevelopment" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Social_and_Digital_Marketing" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Creative_Development_Services" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Parent_CompanyName" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="Parent_CompanyURL" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="No_Of_Offices" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="BigClients" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="CompetitorUsing" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="TPP_Score_Value" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="CompetitorName" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="New_BDType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="New_Chapter_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="New_Master_Abbv" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="address_2" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="fax" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="OfficersLink" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="url" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="msa" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BD_DS_Rep" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BD_PS_Rep" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BD_Tier" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NamedAccount" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BD_EMAIL_FILTER" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BD_Division" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BD_Category" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BD_Classification" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ParentAccountID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LastModifiedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ApprovedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TeamName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="LeadSource" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Marketing_Project" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TaskPOC" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Prioritization" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="SFDCAccountID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Event_Start_Date_MM_DD_YYYY" Type="DateTime" Precision="3" />
+    <Property Name="Event_End_Date_MM_DD_YYYY" Type="DateTime" Precision="3" />
+    <Property Name="EventDate_Venue1" Type="DateTime" Precision="3" />
+    <Property Name="CurrentEventFee_Max_In_Dollars" Type="Int32" />
+    <Property Name="Average_TicketPrice_CT_TM" Type="Double" />
+    <Property Name="Facebook_Likes" Type="Int32" />
+    <Property Name="No_of_Attendees" Type="Int32" />
+    <Property Name="Number_Of_RoomNights_Booked" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="LastModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="ApprovedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ContactBase_Temp">
+    <Key>
+      <PropertyRef Name="Contact_ID" />
+    </Key>
+    <Property Name="Contact_ID" Type="Guid" Nullable="false" />
+    <Property Name="Account_ID" Type="Guid" />
+    <Property Name="Salutation" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="FirstName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Title" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+    <Property Name="Prioritization" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DirectPhone" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LinkedinURL" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="LinkedinID" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="AlternatePhone" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="AlternateEmail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ContactInfo" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="ContactLevel_description" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="TitleLevel" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="JobFunction" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TaskPOC" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="AdditionalContactInfo" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="AssignTo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EmailNotification" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="FollowUp_Open_Closed_Task" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="FollowUpTask_AssignTo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="FollowUpTask_Comment" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="FollowUpTask_Priority" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="FollowUpTask_Subject" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IRReps_Comments" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="Keywords_Group" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LeadInfo" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="LeadStatus" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="MktgContactCAT" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="MobilePhone" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="OmniCampaignID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="OmniCampaignNames" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="OmniProduct" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="OmniRegions" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="OmniSource" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Omni_Tactic_Final" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="OpenGroup_ClosedGroup" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Open_Closed_Task" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Other_SM_Urls" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="Contact_Type" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IRRep" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LastModifiedBy" Type="String" MaxLength="400" FixedLength="false" Unicode="true" />
+    <Property Name="LastModifiedOn" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ApprovedBy" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="ApprovedOn" Type="String" MaxLength="700" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="TeamName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LeadSource" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MarketingProject" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="SFDCContactID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CampaignId" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Mobile" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK__ContactBa__Accou__70DDC3D8">
+    <End Role="AccountBase" Type="Self.AccountBase" Multiplicity="0..1" />
+    <End Role="ContactBase" Type="Self.ContactBase" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="cventEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AccountBases" EntityType="Self.AccountBase" />
+    <EntitySet Name="ContactBases" EntityType="Self.ContactBase" />
+    <EntitySet Name="AccountBase_Temp" EntityType="Self.AccountBase_Temp" />
+    <EntitySet Name="ContactBase_Temp" EntityType="Self.ContactBase_Temp" />
+    <AssociationSet Name="FK__ContactBa__Accou__70DDC3D8" Association="Self.FK__ContactBa__Accou__70DDC3D8">
+      <End Role="AccountBase" EntitySet="AccountBases" />
+      <End Role="ContactBase" EntitySet="ContactBases" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

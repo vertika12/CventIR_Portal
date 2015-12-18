@@ -1,0 +1,9 @@
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.BLL\bin\Debug\DataManager.BLL.dll
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.BLL\bin\Debug\DataManager.BLL.pdb
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.BLL\bin\Debug\DataManager.DAL.dll
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.BLL\bin\Debug\EntityFramework.dll
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.BLL\bin\Debug\DataManager.DAL.pdb
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.BLL\bin\Debug\EntityFramework.xml
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.BLL\obj\Debug\DataManager.BLL.csprojResolveAssemblyReference.cache
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.BLL\obj\Debug\DataManager.BLL.dll
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.BLL\obj\Debug\DataManager.BLL.pdb

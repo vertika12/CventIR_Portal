@@ -1,0 +1,630 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="cventModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AccountBase">
+    <Key>
+      <PropertyRef Name="Account_ID" />
+    </Key>
+    <Property Name="Account_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Website" Type="nvarchar" MaxLength="700" />
+    <Property Name="Account" Type="nvarchar" MaxLength="100" />
+    <Property Name="Company_&amp;_EventInfo" Type="nvarchar" MaxLength="700" />
+    <Property Name="Segment" Type="nvarchar" MaxLength="510" />
+    <Property Name="Industry" Type="nvarchar" MaxLength="510" />
+    <Property Name="Industry_Sub_Segment" Type="nvarchar" MaxLength="510" />
+    <Property Name="Revenue_in_millions" Type="nvarchar" MaxLength="200" />
+    <Property Name="Employees" Type="nvarchar" MaxLength="200" />
+    <Property Name="CompanyURL" Type="nvarchar" MaxLength="700" />
+    <Property Name="MailingStreet" Type="nvarchar" MaxLength="100" />
+    <Property Name="MailingCity" Type="nvarchar" MaxLength="100" />
+    <Property Name="Mailing_StateProvince" Type="nvarchar" MaxLength="100" />
+    <Property Name="Mailing_Zip" Type="nvarchar" MaxLength="40" />
+    <Property Name="MailingCountry" Type="nvarchar" MaxLength="100" />
+    <Property Name="Continent" Type="nvarchar" MaxLength="100" />
+    <Property Name="AccountPhone" Type="nvarchar" MaxLength="100" />
+    <Property Name="Current _Event_Name" Type="nvarchar" MaxLength="400" />
+    <Property Name="Current_Event_Fee" Type="nvarchar" MaxLength="30" />
+    <Property Name="Event_Charge" Type="nvarchar" MaxLength="30" />
+    <Property Name="Current_Event_URL" Type="nvarchar" MaxLength="700" />
+    <Property Name="EventType" Type="nvarchar" MaxLength="200" />
+    <Property Name="NumberofEvents" Type="nvarchar" MaxLength="30" />
+    <Property Name="RegProcess" Type="nvarchar" MaxLength="100" />
+    <Property Name="Event_Competitor_Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Biggest_Event_Type" Type="nvarchar" MaxLength="100" />
+    <Property Name="EventFee" Type="nvarchar" MaxLength="10" />
+    <Property Name="MobileQualified" Type="nvarchar" MaxLength="10" />
+    <Property Name="Categorization" Type="nvarchar" MaxLength="200" />
+    <Property Name="Sourcing" Type="nvarchar" MaxLength="10" />
+    <Property Name="SleepingRooms_RoomNights_for_Event1" Type="nvarchar" MaxLength="10" />
+    <Property Name="VenueType_1" Type="nvarchar" MaxLength="100" />
+    <Property Name="VenueName_1" Type="nvarchar" MaxLength="400" />
+    <Property Name="VenueLocation_1" Type="nvarchar" MaxLength="100" />
+    <Property Name="Zip_1" Type="nvarchar" MaxLength="30" />
+    <Property Name="Ever_used_MobileApp_CC" Type="nvarchar" MaxLength="10" />
+    <Property Name="MobileAppOS" Type="nvarchar" MaxLength="10" />
+    <Property Name="MobileAppLink" Type="nvarchar" MaxLength="700" />
+    <Property Name="Developer" Type="nvarchar" MaxLength="100" />
+    <Property Name="EventOccurrence" Type="nvarchar" MaxLength="30" />
+    <Property Name="EventDuration" Type="nvarchar" MaxLength="30" />
+    <Property Name="HaveBreakouts_CC" Type="nvarchar" MaxLength="30" />
+    <Property Name="No_of_Attendees_CC" Type="nvarchar" MaxLength="30" />
+    <Property Name="Sponsors" Type="nvarchar" MaxLength="30" />
+    <Property Name="Exhibitors" Type="nvarchar" MaxLength="30" />
+    <Property Name="Account_Level_description" Type="nvarchar" MaxLength="400" />
+    <Property Name="Company_and_Survey_Info" Type="nvarchar" MaxLength="100" />
+    <Property Name="SurveyName" Type="nvarchar" MaxLength="510" />
+    <Property Name="Types_of_Surveys" Type="nvarchar" MaxLength="100" />
+    <Property Name="SurveyReports" Type="nvarchar" MaxLength="30" />
+    <Property Name="SurveyLink" Type="nvarchar" MaxLength="700" />
+    <Property Name="SurveyCompetitor" Type="nvarchar" MaxLength="100" />
+    <Property Name="Sales_BizDev" Type="nvarchar" MaxLength="400" />
+    <Property Name="Competitor_SurveyLink" Type="nvarchar" MaxLength="700" />
+    <Property Name="Type_of_Surveys" Type="nvarchar" MaxLength="100" />
+    <Property Name="Survey_ReportLink" Type="nvarchar" MaxLength="700" />
+    <Property Name="Competitor_Event_URL" Type="nvarchar" MaxLength="700" />
+    <Property Name="Ever_used_Mobile_App" Type="nvarchar" MaxLength="30" />
+    <Property Name="Event_Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Event_Type_CC" Type="nvarchar" MaxLength="100" />
+    <Property Name="Event_Fee_CC" Type="nvarchar" MaxLength="30" />
+    <Property Name="MasterVerticals" Type="nvarchar" MaxLength="100" />
+    <Property Name="SubVertical_CT_TM" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vertical_CT_TM" Type="nvarchar" MaxLength="100" />
+    <Property Name="Current_Ticketing_Provider" Type="nvarchar" MaxLength="100" />
+    <Property Name="Sponsors_CT_TM" Type="nvarchar" MaxLength="30" />
+    <Property Name="MobileApp_CT_TM" Type="nvarchar" MaxLength="30" />
+    <Property Name="Competitor_CT" Type="nvarchar" MaxLength="30" />
+    <Property Name="Mkt_CAT" Type="nvarchar" MaxLength="30" />
+    <Property Name="Current_Mobile_Provider" Type="nvarchar" MaxLength="200" />
+    <Property Name="VenueCapacity" Type="nvarchar" MaxLength="30" />
+    <Property Name="OnlinePresence" Type="nvarchar" MaxLength="30" />
+    <Property Name="Total_Service_Revenue" Type="nvarchar" MaxLength="30" />
+    <Property Name="Event_Planning_Registration" Type="nvarchar" MaxLength="100" />
+    <Property Name="VenueSourcing" Type="nvarchar" MaxLength="30" />
+    <Property Name="GroupBooking" Type="nvarchar" MaxLength="30" />
+    <Property Name="ExperientialMarketing" Type="nvarchar" MaxLength="30" />
+    <Property Name="Branding" Type="nvarchar" MaxLength="100" />
+    <Property Name="MobileDevelopment" Type="nvarchar" MaxLength="30" />
+    <Property Name="Social_and_Digital_Marketing" Type="nvarchar" MaxLength="30" />
+    <Property Name="Creative_Development_Services" Type="nvarchar" MaxLength="30" />
+    <Property Name="Parent_CompanyName" Type="nvarchar" MaxLength="400" />
+    <Property Name="Parent_CompanyURL" Type="nvarchar" MaxLength="700" />
+    <Property Name="No_Of_Offices" Type="nvarchar" MaxLength="30" />
+    <Property Name="BigClients" Type="nvarchar" MaxLength="30" />
+    <Property Name="CompetitorUsing" Type="nvarchar" MaxLength="30" />
+    <Property Name="TPP_Score_Value" Type="nvarchar" MaxLength="30" />
+    <Property Name="CompetitorName" Type="nvarchar" MaxLength="400" />
+    <Property Name="New_BDType" Type="nvarchar" MaxLength="100" />
+    <Property Name="New_Chapter_Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="New_Master_Abbv" Type="nvarchar" MaxLength="100" />
+    <Property Name="address_2" Type="nvarchar" MaxLength="100" />
+    <Property Name="fax" Type="nvarchar" MaxLength="30" />
+    <Property Name="OfficersLink" Type="nvarchar" MaxLength="700" />
+    <Property Name="url" Type="nvarchar" MaxLength="700" />
+    <Property Name="msa" Type="nvarchar" MaxLength="100" />
+    <Property Name="BD_DS_Rep" Type="nvarchar" MaxLength="100" />
+    <Property Name="BD_PS_Rep" Type="nvarchar" MaxLength="100" />
+    <Property Name="BD_Tier" Type="nvarchar" MaxLength="100" />
+    <Property Name="NamedAccount" Type="nvarchar" MaxLength="100" />
+    <Property Name="BD_EMAIL_FILTER" Type="nvarchar" MaxLength="100" />
+    <Property Name="BD_Division" Type="nvarchar" MaxLength="100" />
+    <Property Name="BD_Category" Type="nvarchar" MaxLength="100" />
+    <Property Name="BD_Classification" Type="nvarchar" MaxLength="100" />
+    <Property Name="ParentAccountID" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="Status" Type="nvarchar" MaxLength="100" />
+    <Property Name="ApprovedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ProjectName" Type="nvarchar" MaxLength="200" />
+    <Property Name="TeamName" Type="nvarchar" MaxLength="200" />
+    <Property Name="LeadSource" Type="nvarchar" MaxLength="200" />
+    <Property Name="Marketing_Project" Type="nvarchar" MaxLength="100" />
+    <Property Name="TaskPOC" Type="nvarchar" MaxLength="200" />
+    <Property Name="Prioritization" Type="nvarchar" MaxLength="30" />
+    <Property Name="SFDCAccountID" Type="nvarchar" MaxLength="100" />
+    <Property Name="Event_Start_Date_MM_DD_YYYY" Type="datetime" />
+    <Property Name="Event_End_Date_MM_DD_YYYY" Type="datetime" />
+    <Property Name="EventDate_Venue1" Type="datetime" />
+    <Property Name="CurrentEventFee_Max_In_Dollars" Type="int" />
+    <Property Name="Average_TicketPrice_CT_TM" Type="float" />
+    <Property Name="Facebook_Likes" Type="int" />
+    <Property Name="No_of_Attendees" Type="int" />
+    <Property Name="Number_Of_RoomNights_Booked" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="LastModifiedOn" Type="datetime" />
+    <Property Name="ApprovedOn" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'cvent.dbo.AccountBase_Temp' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="AccountBase_Temp">
+    <Key>
+      <PropertyRef Name="Account_ID" />
+    </Key>
+    <Property Name="Account_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Website" Type="nvarchar" MaxLength="700" />
+    <Property Name="Account" Type="nvarchar" MaxLength="100" />
+    <Property Name="Company_&amp;_EventInfo" Type="nvarchar" MaxLength="700" />
+    <Property Name="Segment" Type="nvarchar" MaxLength="510" />
+    <Property Name="Industry" Type="nvarchar" MaxLength="510" />
+    <Property Name="Industry_Sub_Segment" Type="nvarchar" MaxLength="510" />
+    <Property Name="Revenue_in_millions" Type="nvarchar" MaxLength="200" />
+    <Property Name="Employees" Type="nvarchar" MaxLength="200" />
+    <Property Name="CompanyURL" Type="nvarchar" MaxLength="700" />
+    <Property Name="MailingStreet" Type="nvarchar" MaxLength="100" />
+    <Property Name="MailingCity" Type="nvarchar" MaxLength="100" />
+    <Property Name="Mailing_StateProvince" Type="nvarchar" MaxLength="100" />
+    <Property Name="Mailing_Zip" Type="nvarchar" MaxLength="40" />
+    <Property Name="MailingCountry" Type="nvarchar" MaxLength="100" />
+    <Property Name="Continent" Type="nvarchar" MaxLength="100" />
+    <Property Name="AccountPhone" Type="nvarchar" MaxLength="100" />
+    <Property Name="Current _Event_Name" Type="nvarchar" MaxLength="400" />
+    <Property Name="Current_Event_Fee" Type="nvarchar" MaxLength="30" />
+    <Property Name="Event_Charge" Type="nvarchar" MaxLength="30" />
+    <Property Name="Current_Event_URL" Type="nvarchar" MaxLength="700" />
+    <Property Name="EventType" Type="nvarchar" MaxLength="200" />
+    <Property Name="NumberofEvents" Type="nvarchar" MaxLength="30" />
+    <Property Name="RegProcess" Type="nvarchar" MaxLength="100" />
+    <Property Name="Event_Competitor_Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Biggest_Event_Type" Type="nvarchar" MaxLength="100" />
+    <Property Name="EventFee" Type="nvarchar" MaxLength="10" />
+    <Property Name="MobileQualified" Type="nvarchar" MaxLength="10" />
+    <Property Name="Categorization" Type="nvarchar" MaxLength="200" />
+    <Property Name="Sourcing" Type="nvarchar" MaxLength="10" />
+    <Property Name="SleepingRooms_RoomNights_for_Event1" Type="nvarchar" MaxLength="10" />
+    <Property Name="VenueType_1" Type="nvarchar" MaxLength="100" />
+    <Property Name="VenueName_1" Type="nvarchar" MaxLength="400" />
+    <Property Name="VenueLocation_1" Type="nvarchar" MaxLength="100" />
+    <Property Name="Zip_1" Type="nvarchar" MaxLength="30" />
+    <Property Name="Ever_used_MobileApp_CC" Type="nvarchar" MaxLength="10" />
+    <Property Name="MobileAppOS" Type="nvarchar" MaxLength="10" />
+    <Property Name="MobileAppLink" Type="nvarchar" MaxLength="700" />
+    <Property Name="Developer" Type="nvarchar" MaxLength="100" />
+    <Property Name="EventOccurrence" Type="nvarchar" MaxLength="30" />
+    <Property Name="EventDuration" Type="nvarchar" MaxLength="30" />
+    <Property Name="HaveBreakouts_CC" Type="nvarchar" MaxLength="30" />
+    <Property Name="No_of_Attendees_CC" Type="nvarchar" MaxLength="30" />
+    <Property Name="Sponsors" Type="nvarchar" MaxLength="30" />
+    <Property Name="Exhibitors" Type="nvarchar" MaxLength="30" />
+    <Property Name="Account_Level_description" Type="nvarchar" MaxLength="400" />
+    <Property Name="Company_and_Survey_Info" Type="nvarchar" MaxLength="100" />
+    <Property Name="SurveyName" Type="nvarchar" MaxLength="510" />
+    <Property Name="Types_of_Surveys" Type="nvarchar" MaxLength="100" />
+    <Property Name="SurveyReports" Type="nvarchar" MaxLength="30" />
+    <Property Name="SurveyLink" Type="nvarchar" MaxLength="700" />
+    <Property Name="SurveyCompetitor" Type="nvarchar" MaxLength="100" />
+    <Property Name="Sales_BizDev" Type="nvarchar" MaxLength="400" />
+    <Property Name="Competitor_SurveyLink" Type="nvarchar" MaxLength="700" />
+    <Property Name="Type_of_Surveys" Type="nvarchar" MaxLength="100" />
+    <Property Name="Survey_ReportLink" Type="nvarchar" MaxLength="700" />
+    <Property Name="Competitor_Event_URL" Type="nvarchar" MaxLength="700" />
+    <Property Name="Ever_used_Mobile_App" Type="nvarchar" MaxLength="30" />
+    <Property Name="Event_Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Event_Type_CC" Type="nvarchar" MaxLength="100" />
+    <Property Name="Event_Fee_CC" Type="nvarchar" MaxLength="30" />
+    <Property Name="MasterVerticals" Type="nvarchar" MaxLength="100" />
+    <Property Name="SubVertical_CT_TM" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vertical_CT_TM" Type="nvarchar" MaxLength="100" />
+    <Property Name="Current_Ticketing_Provider" Type="nvarchar" MaxLength="100" />
+    <Property Name="Sponsors_CT_TM" Type="nvarchar" MaxLength="30" />
+    <Property Name="MobileApp_CT_TM" Type="nvarchar" MaxLength="30" />
+    <Property Name="Competitor_CT" Type="nvarchar" MaxLength="30" />
+    <Property Name="Mkt_CAT" Type="nvarchar" MaxLength="30" />
+    <Property Name="Current_Mobile_Provider" Type="nvarchar" MaxLength="200" />
+    <Property Name="VenueCapacity" Type="nvarchar" MaxLength="30" />
+    <Property Name="OnlinePresence" Type="nvarchar" MaxLength="30" />
+    <Property Name="Total_Service_Revenue" Type="nvarchar" MaxLength="30" />
+    <Property Name="Event_Planning_Registration" Type="nvarchar" MaxLength="100" />
+    <Property Name="VenueSourcing" Type="nvarchar" MaxLength="30" />
+    <Property Name="GroupBooking" Type="nvarchar" MaxLength="30" />
+    <Property Name="ExperientialMarketing" Type="nvarchar" MaxLength="30" />
+    <Property Name="Branding" Type="nvarchar" MaxLength="100" />
+    <Property Name="MobileDevelopment" Type="nvarchar" MaxLength="30" />
+    <Property Name="Social_and_Digital_Marketing" Type="nvarchar" MaxLength="30" />
+    <Property Name="Creative_Development_Services" Type="nvarchar" MaxLength="30" />
+    <Property Name="Parent_CompanyName" Type="nvarchar" MaxLength="400" />
+    <Property Name="Parent_CompanyURL" Type="nvarchar" MaxLength="700" />
+    <Property Name="No_Of_Offices" Type="nvarchar" MaxLength="30" />
+    <Property Name="BigClients" Type="nvarchar" MaxLength="30" />
+    <Property Name="CompetitorUsing" Type="nvarchar" MaxLength="30" />
+    <Property Name="TPP_Score_Value" Type="nvarchar" MaxLength="30" />
+    <Property Name="CompetitorName" Type="nvarchar" MaxLength="400" />
+    <Property Name="New_BDType" Type="nvarchar" MaxLength="100" />
+    <Property Name="New_Chapter_Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="New_Master_Abbv" Type="nvarchar" MaxLength="100" />
+    <Property Name="address_2" Type="nvarchar" MaxLength="100" />
+    <Property Name="fax" Type="nvarchar" MaxLength="30" />
+    <Property Name="OfficersLink" Type="nvarchar" MaxLength="700" />
+    <Property Name="url" Type="nvarchar" MaxLength="700" />
+    <Property Name="msa" Type="nvarchar" MaxLength="100" />
+    <Property Name="BD_DS_Rep" Type="nvarchar" MaxLength="100" />
+    <Property Name="BD_PS_Rep" Type="nvarchar" MaxLength="100" />
+    <Property Name="BD_Tier" Type="nvarchar" MaxLength="100" />
+    <Property Name="NamedAccount" Type="nvarchar" MaxLength="100" />
+    <Property Name="BD_EMAIL_FILTER" Type="nvarchar" MaxLength="100" />
+    <Property Name="BD_Division" Type="nvarchar" MaxLength="100" />
+    <Property Name="BD_Category" Type="nvarchar" MaxLength="100" />
+    <Property Name="BD_Classification" Type="nvarchar" MaxLength="100" />
+    <Property Name="ParentAccountID" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="Status" Type="nvarchar" MaxLength="100" />
+    <Property Name="ApprovedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="ProjectName" Type="nvarchar" MaxLength="200" />
+    <Property Name="TeamName" Type="nvarchar" MaxLength="200" />
+    <Property Name="LeadSource" Type="nvarchar" MaxLength="200" />
+    <Property Name="Marketing_Project" Type="nvarchar" MaxLength="100" />
+    <Property Name="TaskPOC" Type="nvarchar" MaxLength="200" />
+    <Property Name="Prioritization" Type="nvarchar" MaxLength="30" />
+    <Property Name="SFDCAccountID" Type="nvarchar" MaxLength="100" />
+    <Property Name="Event_Start_Date_MM_DD_YYYY" Type="datetime" />
+    <Property Name="Event_End_Date_MM_DD_YYYY" Type="datetime" />
+    <Property Name="EventDate_Venue1" Type="datetime" />
+    <Property Name="CurrentEventFee_Max_In_Dollars" Type="int" />
+    <Property Name="Average_TicketPrice_CT_TM" Type="float" />
+    <Property Name="Facebook_Likes" Type="int" />
+    <Property Name="No_of_Attendees" Type="int" />
+    <Property Name="Number_Of_RoomNights_Booked" Type="int" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="LastModifiedOn" Type="datetime" />
+    <Property Name="ApprovedOn" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ContactBase">
+    <Key>
+      <PropertyRef Name="Contact_ID" />
+    </Key>
+    <Property Name="Contact_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Account_ID" Type="uniqueidentifier" />
+    <Property Name="Salutation" Type="nvarchar" MaxLength="30" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="100" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Title" Type="nvarchar" MaxLength="80" />
+    <Property Name="Prioritization" Type="nvarchar" MaxLength="30" />
+    <Property Name="Email" Type="nvarchar" MaxLength="200" />
+    <Property Name="DirectPhone" Type="nvarchar" MaxLength="100" />
+    <Property Name="LinkedinURL" Type="nvarchar" MaxLength="700" />
+    <Property Name="LinkedinID" Type="nvarchar" MaxLength="30" />
+    <Property Name="AlternatePhone" Type="nvarchar" MaxLength="100" />
+    <Property Name="AlternateEmail" Type="nvarchar" MaxLength="100" />
+    <Property Name="ContactInfo" Type="nvarchar" MaxLength="30" />
+    <Property Name="ContactLevel_description" Type="nvarchar" MaxLength="400" />
+    <Property Name="TitleLevel" Type="nvarchar" MaxLength="30" />
+    <Property Name="JobFunction" Type="nvarchar" MaxLength="100" />
+    <Property Name="TaskPOC" Type="nvarchar" MaxLength="200" />
+    <Property Name="AdditionalContactInfo" Type="nvarchar" MaxLength="30" />
+    <Property Name="AssignTo" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmailNotification" Type="nvarchar" MaxLength="30" />
+    <Property Name="FollowUp_Open_Closed_Task" Type="nvarchar" MaxLength="30" />
+    <Property Name="FollowUpTask_AssignTo" Type="nvarchar" MaxLength="100" />
+    <Property Name="FollowUpTask_Comment" Type="nvarchar" MaxLength="400" />
+    <Property Name="FollowUpTask_Priority" Type="nvarchar" MaxLength="30" />
+    <Property Name="FollowUpTask_Subject" Type="nvarchar" MaxLength="100" />
+    <Property Name="IRReps_Comments" Type="nvarchar" MaxLength="400" />
+    <Property Name="Keywords_Group" Type="nvarchar" MaxLength="100" />
+    <Property Name="LeadInfo" Type="nvarchar" MaxLength="30" />
+    <Property Name="LeadStatus" Type="nvarchar" MaxLength="30" />
+    <Property Name="MktgContactCAT" Type="nvarchar" MaxLength="30" />
+    <Property Name="MobilePhone" Type="nvarchar" MaxLength="30" />
+    <Property Name="OmniCampaignID" Type="nvarchar" MaxLength="100" />
+    <Property Name="OmniCampaignNames" Type="nvarchar" MaxLength="400" />
+    <Property Name="OmniProduct" Type="nvarchar" MaxLength="100" />
+    <Property Name="OmniRegions" Type="nvarchar" MaxLength="400" />
+    <Property Name="OmniSource" Type="nvarchar" MaxLength="30" />
+    <Property Name="Omni_Tactic_Final" Type="nvarchar" MaxLength="30" />
+    <Property Name="OpenGroup_ClosedGroup" Type="nvarchar" MaxLength="30" />
+    <Property Name="Open_Closed_Task" Type="nvarchar" MaxLength="30" />
+    <Property Name="Other_SM_Urls" Type="nvarchar" MaxLength="700" />
+    <Property Name="Contact_Type" Type="nvarchar" MaxLength="100" />
+    <Property Name="IRRep" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedOn" Type="nvarchar" MaxLength="700" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="400" />
+    <Property Name="LastModifiedOn" Type="nvarchar" MaxLength="700" />
+    <Property Name="Status" Type="nvarchar" MaxLength="100" />
+    <Property Name="ApprovedBy" Type="nvarchar" MaxLength="700" />
+    <Property Name="ApprovedOn" Type="nvarchar" MaxLength="700" />
+    <Property Name="ProjectName" Type="nvarchar" MaxLength="30" />
+    <Property Name="TeamName" Type="nvarchar" MaxLength="100" />
+    <Property Name="LeadSource" Type="nvarchar" MaxLength="100" />
+    <Property Name="MarketingProject" Type="nvarchar" MaxLength="30" />
+    <Property Name="SFDCContactID" Type="nvarchar" MaxLength="100" />
+    <Property Name="CampaignId" Type="nvarchar" MaxLength="30" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'cvent.dbo.ContactBase_Temp' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ContactBase_Temp">
+    <Key>
+      <PropertyRef Name="Contact_ID" />
+    </Key>
+    <Property Name="Contact_ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Account_ID" Type="uniqueidentifier" />
+    <Property Name="Salutation" Type="nvarchar" MaxLength="30" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="100" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Title" Type="nvarchar" MaxLength="80" />
+    <Property Name="Prioritization" Type="nvarchar" MaxLength="30" />
+    <Property Name="Email" Type="nvarchar" MaxLength="200" />
+    <Property Name="DirectPhone" Type="nvarchar" MaxLength="100" />
+    <Property Name="LinkedinURL" Type="nvarchar" MaxLength="700" />
+    <Property Name="LinkedinID" Type="nvarchar" MaxLength="30" />
+    <Property Name="AlternatePhone" Type="nvarchar" MaxLength="100" />
+    <Property Name="AlternateEmail" Type="nvarchar" MaxLength="100" />
+    <Property Name="ContactInfo" Type="nvarchar" MaxLength="30" />
+    <Property Name="ContactLevel_description" Type="nvarchar" MaxLength="400" />
+    <Property Name="TitleLevel" Type="nvarchar" MaxLength="30" />
+    <Property Name="JobFunction" Type="nvarchar" MaxLength="100" />
+    <Property Name="TaskPOC" Type="nvarchar" MaxLength="200" />
+    <Property Name="AdditionalContactInfo" Type="nvarchar" MaxLength="30" />
+    <Property Name="AssignTo" Type="nvarchar" MaxLength="100" />
+    <Property Name="EmailNotification" Type="nvarchar" MaxLength="30" />
+    <Property Name="FollowUp_Open_Closed_Task" Type="nvarchar" MaxLength="30" />
+    <Property Name="FollowUpTask_AssignTo" Type="nvarchar" MaxLength="100" />
+    <Property Name="FollowUpTask_Comment" Type="nvarchar" MaxLength="400" />
+    <Property Name="FollowUpTask_Priority" Type="nvarchar" MaxLength="30" />
+    <Property Name="FollowUpTask_Subject" Type="nvarchar" MaxLength="100" />
+    <Property Name="IRReps_Comments" Type="nvarchar" MaxLength="400" />
+    <Property Name="Keywords_Group" Type="nvarchar" MaxLength="100" />
+    <Property Name="LeadInfo" Type="nvarchar" MaxLength="30" />
+    <Property Name="LeadStatus" Type="nvarchar" MaxLength="30" />
+    <Property Name="MktgContactCAT" Type="nvarchar" MaxLength="30" />
+    <Property Name="MobilePhone" Type="nvarchar" MaxLength="30" />
+    <Property Name="OmniCampaignID" Type="nvarchar" MaxLength="100" />
+    <Property Name="OmniCampaignNames" Type="nvarchar" MaxLength="400" />
+    <Property Name="OmniProduct" Type="nvarchar" MaxLength="100" />
+    <Property Name="OmniRegions" Type="nvarchar" MaxLength="400" />
+    <Property Name="OmniSource" Type="nvarchar" MaxLength="30" />
+    <Property Name="Omni_Tactic_Final" Type="nvarchar" MaxLength="30" />
+    <Property Name="OpenGroup_ClosedGroup" Type="nvarchar" MaxLength="30" />
+    <Property Name="Open_Closed_Task" Type="nvarchar" MaxLength="30" />
+    <Property Name="Other_SM_Urls" Type="nvarchar" MaxLength="700" />
+    <Property Name="Contact_Type" Type="nvarchar" MaxLength="100" />
+    <Property Name="IRRep" Type="nvarchar" MaxLength="100" />
+    <Property Name="CreatedOn" Type="nvarchar" MaxLength="700" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="LastModifiedBy" Type="nvarchar" MaxLength="400" />
+    <Property Name="LastModifiedOn" Type="nvarchar" MaxLength="700" />
+    <Property Name="Status" Type="nvarchar" MaxLength="100" />
+    <Property Name="ApprovedBy" Type="nvarchar" MaxLength="700" />
+    <Property Name="ApprovedOn" Type="nvarchar" MaxLength="700" />
+    <Property Name="ProjectName" Type="nvarchar" MaxLength="30" />
+    <Property Name="TeamName" Type="nvarchar" MaxLength="100" />
+    <Property Name="LeadSource" Type="nvarchar" MaxLength="100" />
+    <Property Name="MarketingProject" Type="nvarchar" MaxLength="30" />
+    <Property Name="SFDCContactID" Type="nvarchar" MaxLength="100" />
+    <Property Name="CampaignId" Type="nvarchar" MaxLength="30" />
+    <Property Name="Mobile" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'cvent.dbo.lookup' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="lookup">
+          <Property Name="Segment" Type="nvarchar" MaxLength="255" />
+          <Property Name="Industry" Type="nvarchar" MaxLength="255" />
+          <Property Name="Sub_Segment" Type="nvarchar" MaxLength="255" />
+          <Property Name="State" Type="nvarchar" MaxLength="255" />
+          <Property Name="Country" Type="nvarchar" MaxLength="255" />
+          <Property Name="Event _type (CC)" Type="nvarchar" MaxLength="255" />
+          <Property Name="Venue_type" Type="nvarchar" MaxLength="255" />
+          <Property Name="Develpoer" Type="nvarchar" MaxLength="255" />
+          <Property Name="mobil_app_os" Type="nvarchar" MaxLength="255" />
+          <Property Name="event_competitor" Type="nvarchar" MaxLength="255" />
+          <Property Name="survey_competitor" Type="nvarchar" MaxLength="255" />
+          <Property Name="Festival_type(CT)" Type="nvarchar" MaxLength="255" />
+          <Property Name="mobil_app_os_(CT)" Type="nvarchar" MaxLength="255" />
+          <Property Name="sub_vertical(CT/TM)" Type="nvarchar" MaxLength="255" />
+          <Property Name="Vertical(CT/TM)" Type="nvarchar" MaxLength="255" />
+          <Property Name="Ticketing_provider" Type="nvarchar" MaxLength="255" />
+          <Property Name="Team_name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Project_name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Event_Type" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+  <Association Name="FK__ContactBa__Accou__70DDC3D8">
+    <End Role="AccountBase" Type="Self.AccountBase" Multiplicity="0..1" />
+    <End Role="ContactBase" Type="Self.ContactBase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccountBase">
+        <PropertyRef Name="Account_ID" />
+      </Principal>
+      <Dependent Role="ContactBase">
+        <PropertyRef Name="Account_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="cventModelStoreContainer">
+    <EntitySet Name="AccountBase" EntityType="Self.AccountBase" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ContactBase" EntityType="Self.ContactBase" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AccountBase_Temp" EntityType="Self.AccountBase_Temp" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [AccountBase_Temp].[Account_ID] AS [Account_ID], 
+    [AccountBase_Temp].[Website] AS [Website], 
+    [AccountBase_Temp].[Account] AS [Account], 
+    [AccountBase_Temp].[Company_&amp;_EventInfo] AS [Company_&amp;_EventInfo], 
+    [AccountBase_Temp].[Segment] AS [Segment], 
+    [AccountBase_Temp].[Industry] AS [Industry], 
+    [AccountBase_Temp].[Industry_Sub_Segment] AS [Industry_Sub_Segment], 
+    [AccountBase_Temp].[Revenue_in_millions] AS [Revenue_in_millions], 
+    [AccountBase_Temp].[Employees] AS [Employees], 
+    [AccountBase_Temp].[CompanyURL] AS [CompanyURL], 
+    [AccountBase_Temp].[MailingStreet] AS [MailingStreet], 
+    [AccountBase_Temp].[MailingCity] AS [MailingCity], 
+    [AccountBase_Temp].[Mailing_StateProvince] AS [Mailing_StateProvince], 
+    [AccountBase_Temp].[Mailing_Zip] AS [Mailing_Zip], 
+    [AccountBase_Temp].[MailingCountry] AS [MailingCountry], 
+    [AccountBase_Temp].[Continent] AS [Continent], 
+    [AccountBase_Temp].[AccountPhone] AS [AccountPhone], 
+    [AccountBase_Temp].[Current _Event_Name] AS [Current _Event_Name], 
+    [AccountBase_Temp].[Current_Event_Fee] AS [Current_Event_Fee], 
+    [AccountBase_Temp].[Event_Charge] AS [Event_Charge], 
+    [AccountBase_Temp].[Current_Event_URL] AS [Current_Event_URL], 
+    [AccountBase_Temp].[EventType] AS [EventType], 
+    [AccountBase_Temp].[NumberofEvents] AS [NumberofEvents], 
+    [AccountBase_Temp].[RegProcess] AS [RegProcess], 
+    [AccountBase_Temp].[Event_Competitor_Name] AS [Event_Competitor_Name], 
+    [AccountBase_Temp].[Biggest_Event_Type] AS [Biggest_Event_Type], 
+    [AccountBase_Temp].[EventFee] AS [EventFee], 
+    [AccountBase_Temp].[MobileQualified] AS [MobileQualified], 
+    [AccountBase_Temp].[Categorization] AS [Categorization], 
+    [AccountBase_Temp].[Sourcing] AS [Sourcing], 
+    [AccountBase_Temp].[SleepingRooms_RoomNights_for_Event1] AS [SleepingRooms_RoomNights_for_Event1], 
+    [AccountBase_Temp].[VenueType_1] AS [VenueType_1], 
+    [AccountBase_Temp].[VenueName_1] AS [VenueName_1], 
+    [AccountBase_Temp].[VenueLocation_1] AS [VenueLocation_1], 
+    [AccountBase_Temp].[Zip_1] AS [Zip_1], 
+    [AccountBase_Temp].[Ever_used_MobileApp_CC] AS [Ever_used_MobileApp_CC], 
+    [AccountBase_Temp].[MobileAppOS] AS [MobileAppOS], 
+    [AccountBase_Temp].[MobileAppLink] AS [MobileAppLink], 
+    [AccountBase_Temp].[Developer] AS [Developer], 
+    [AccountBase_Temp].[EventOccurrence] AS [EventOccurrence], 
+    [AccountBase_Temp].[EventDuration] AS [EventDuration], 
+    [AccountBase_Temp].[HaveBreakouts_CC] AS [HaveBreakouts_CC], 
+    [AccountBase_Temp].[No_of_Attendees_CC] AS [No_of_Attendees_CC], 
+    [AccountBase_Temp].[Sponsors] AS [Sponsors], 
+    [AccountBase_Temp].[Exhibitors] AS [Exhibitors], 
+    [AccountBase_Temp].[Account_Level_description] AS [Account_Level_description], 
+    [AccountBase_Temp].[Company_and_Survey_Info] AS [Company_and_Survey_Info], 
+    [AccountBase_Temp].[SurveyName] AS [SurveyName], 
+    [AccountBase_Temp].[Types_of_Surveys] AS [Types_of_Surveys], 
+    [AccountBase_Temp].[SurveyReports] AS [SurveyReports], 
+    [AccountBase_Temp].[SurveyLink] AS [SurveyLink], 
+    [AccountBase_Temp].[SurveyCompetitor] AS [SurveyCompetitor], 
+    [AccountBase_Temp].[Sales_BizDev] AS [Sales_BizDev], 
+    [AccountBase_Temp].[Competitor_SurveyLink] AS [Competitor_SurveyLink], 
+    [AccountBase_Temp].[Type_of_Surveys] AS [Type_of_Surveys], 
+    [AccountBase_Temp].[Survey_ReportLink] AS [Survey_ReportLink], 
+    [AccountBase_Temp].[Competitor_Event_URL] AS [Competitor_Event_URL], 
+    [AccountBase_Temp].[Ever_used_Mobile_App] AS [Ever_used_Mobile_App], 
+    [AccountBase_Temp].[Event_Name] AS [Event_Name], 
+    [AccountBase_Temp].[Event_Type_CC] AS [Event_Type_CC], 
+    [AccountBase_Temp].[Event_Fee_CC] AS [Event_Fee_CC], 
+    [AccountBase_Temp].[MasterVerticals] AS [MasterVerticals], 
+    [AccountBase_Temp].[SubVertical_CT_TM] AS [SubVertical_CT_TM], 
+    [AccountBase_Temp].[Vertical_CT_TM] AS [Vertical_CT_TM], 
+    [AccountBase_Temp].[Current_Ticketing_Provider] AS [Current_Ticketing_Provider], 
+    [AccountBase_Temp].[Sponsors_CT_TM] AS [Sponsors_CT_TM], 
+    [AccountBase_Temp].[MobileApp_CT_TM] AS [MobileApp_CT_TM], 
+    [AccountBase_Temp].[Competitor_CT] AS [Competitor_CT], 
+    [AccountBase_Temp].[Mkt_CAT] AS [Mkt_CAT], 
+    [AccountBase_Temp].[Current_Mobile_Provider] AS [Current_Mobile_Provider], 
+    [AccountBase_Temp].[VenueCapacity] AS [VenueCapacity], 
+    [AccountBase_Temp].[OnlinePresence] AS [OnlinePresence], 
+    [AccountBase_Temp].[Total_Service_Revenue] AS [Total_Service_Revenue], 
+    [AccountBase_Temp].[Event_Planning_Registration] AS [Event_Planning_Registration], 
+    [AccountBase_Temp].[VenueSourcing] AS [VenueSourcing], 
+    [AccountBase_Temp].[GroupBooking] AS [GroupBooking], 
+    [AccountBase_Temp].[ExperientialMarketing] AS [ExperientialMarketing], 
+    [AccountBase_Temp].[Branding] AS [Branding], 
+    [AccountBase_Temp].[MobileDevelopment] AS [MobileDevelopment], 
+    [AccountBase_Temp].[Social_and_Digital_Marketing] AS [Social_and_Digital_Marketing], 
+    [AccountBase_Temp].[Creative_Development_Services] AS [Creative_Development_Services], 
+    [AccountBase_Temp].[Parent_CompanyName] AS [Parent_CompanyName], 
+    [AccountBase_Temp].[Parent_CompanyURL] AS [Parent_CompanyURL], 
+    [AccountBase_Temp].[No_Of_Offices] AS [No_Of_Offices], 
+    [AccountBase_Temp].[BigClients] AS [BigClients], 
+    [AccountBase_Temp].[CompetitorUsing] AS [CompetitorUsing], 
+    [AccountBase_Temp].[TPP_Score_Value] AS [TPP_Score_Value], 
+    [AccountBase_Temp].[CompetitorName] AS [CompetitorName], 
+    [AccountBase_Temp].[New_BDType] AS [New_BDType], 
+    [AccountBase_Temp].[New_Chapter_Name] AS [New_Chapter_Name], 
+    [AccountBase_Temp].[New_Master_Abbv] AS [New_Master_Abbv], 
+    [AccountBase_Temp].[address_2] AS [address_2], 
+    [AccountBase_Temp].[fax] AS [fax], 
+    [AccountBase_Temp].[OfficersLink] AS [OfficersLink], 
+    [AccountBase_Temp].[url] AS [url], 
+    [AccountBase_Temp].[msa] AS [msa], 
+    [AccountBase_Temp].[BD_DS_Rep] AS [BD_DS_Rep], 
+    [AccountBase_Temp].[BD_PS_Rep] AS [BD_PS_Rep], 
+    [AccountBase_Temp].[BD_Tier] AS [BD_Tier], 
+    [AccountBase_Temp].[NamedAccount] AS [NamedAccount], 
+    [AccountBase_Temp].[BD_EMAIL_FILTER] AS [BD_EMAIL_FILTER], 
+    [AccountBase_Temp].[BD_Division] AS [BD_Division], 
+    [AccountBase_Temp].[BD_Category] AS [BD_Category], 
+    [AccountBase_Temp].[BD_Classification] AS [BD_Classification], 
+    [AccountBase_Temp].[ParentAccountID] AS [ParentAccountID], 
+    [AccountBase_Temp].[CreatedBy] AS [CreatedBy], 
+    [AccountBase_Temp].[LastModifiedBy] AS [LastModifiedBy], 
+    [AccountBase_Temp].[Status] AS [Status], 
+    [AccountBase_Temp].[ApprovedBy] AS [ApprovedBy], 
+    [AccountBase_Temp].[ProjectName] AS [ProjectName], 
+    [AccountBase_Temp].[TeamName] AS [TeamName], 
+    [AccountBase_Temp].[LeadSource] AS [LeadSource], 
+    [AccountBase_Temp].[Marketing_Project] AS [Marketing_Project], 
+    [AccountBase_Temp].[TaskPOC] AS [TaskPOC], 
+    [AccountBase_Temp].[Prioritization] AS [Prioritization], 
+    [AccountBase_Temp].[SFDCAccountID] AS [SFDCAccountID], 
+    [AccountBase_Temp].[Event_Start_Date_MM_DD_YYYY] AS [Event_Start_Date_MM_DD_YYYY], 
+    [AccountBase_Temp].[Event_End_Date_MM_DD_YYYY] AS [Event_End_Date_MM_DD_YYYY], 
+    [AccountBase_Temp].[EventDate_Venue1] AS [EventDate_Venue1], 
+    [AccountBase_Temp].[CurrentEventFee_Max_In_Dollars] AS [CurrentEventFee_Max_In_Dollars], 
+    [AccountBase_Temp].[Average_TicketPrice_CT_TM] AS [Average_TicketPrice_CT_TM], 
+    [AccountBase_Temp].[Facebook_Likes] AS [Facebook_Likes], 
+    [AccountBase_Temp].[No_of_Attendees] AS [No_of_Attendees], 
+    [AccountBase_Temp].[Number_Of_RoomNights_Booked] AS [Number_Of_RoomNights_Booked], 
+    [AccountBase_Temp].[CreatedOn] AS [CreatedOn], 
+    [AccountBase_Temp].[LastModifiedOn] AS [LastModifiedOn], 
+    [AccountBase_Temp].[ApprovedOn] AS [ApprovedOn]
+    FROM [dbo].[AccountBase_Temp] AS [AccountBase_Temp]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ContactBase_Temp" EntityType="Self.ContactBase_Temp" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ContactBase_Temp].[Contact_ID] AS [Contact_ID], 
+    [ContactBase_Temp].[Account_ID] AS [Account_ID], 
+    [ContactBase_Temp].[Salutation] AS [Salutation], 
+    [ContactBase_Temp].[FirstName] AS [FirstName], 
+    [ContactBase_Temp].[LastName] AS [LastName], 
+    [ContactBase_Temp].[Title] AS [Title], 
+    [ContactBase_Temp].[Prioritization] AS [Prioritization], 
+    [ContactBase_Temp].[Email] AS [Email], 
+    [ContactBase_Temp].[DirectPhone] AS [DirectPhone], 
+    [ContactBase_Temp].[LinkedinURL] AS [LinkedinURL], 
+    [ContactBase_Temp].[LinkedinID] AS [LinkedinID], 
+    [ContactBase_Temp].[AlternatePhone] AS [AlternatePhone], 
+    [ContactBase_Temp].[AlternateEmail] AS [AlternateEmail], 
+    [ContactBase_Temp].[ContactInfo] AS [ContactInfo], 
+    [ContactBase_Temp].[ContactLevel_description] AS [ContactLevel_description], 
+    [ContactBase_Temp].[TitleLevel] AS [TitleLevel], 
+    [ContactBase_Temp].[JobFunction] AS [JobFunction], 
+    [ContactBase_Temp].[TaskPOC] AS [TaskPOC], 
+    [ContactBase_Temp].[AdditionalContactInfo] AS [AdditionalContactInfo], 
+    [ContactBase_Temp].[AssignTo] AS [AssignTo], 
+    [ContactBase_Temp].[EmailNotification] AS [EmailNotification], 
+    [ContactBase_Temp].[FollowUp_Open_Closed_Task] AS [FollowUp_Open_Closed_Task], 
+    [ContactBase_Temp].[FollowUpTask_AssignTo] AS [FollowUpTask_AssignTo], 
+    [ContactBase_Temp].[FollowUpTask_Comment] AS [FollowUpTask_Comment], 
+    [ContactBase_Temp].[FollowUpTask_Priority] AS [FollowUpTask_Priority], 
+    [ContactBase_Temp].[FollowUpTask_Subject] AS [FollowUpTask_Subject], 
+    [ContactBase_Temp].[IRReps_Comments] AS [IRReps_Comments], 
+    [ContactBase_Temp].[Keywords_Group] AS [Keywords_Group], 
+    [ContactBase_Temp].[LeadInfo] AS [LeadInfo], 
+    [ContactBase_Temp].[LeadStatus] AS [LeadStatus], 
+    [ContactBase_Temp].[MktgContactCAT] AS [MktgContactCAT], 
+    [ContactBase_Temp].[MobilePhone] AS [MobilePhone], 
+    [ContactBase_Temp].[OmniCampaignID] AS [OmniCampaignID], 
+    [ContactBase_Temp].[OmniCampaignNames] AS [OmniCampaignNames], 
+    [ContactBase_Temp].[OmniProduct] AS [OmniProduct], 
+    [ContactBase_Temp].[OmniRegions] AS [OmniRegions], 
+    [ContactBase_Temp].[OmniSource] AS [OmniSource], 
+    [ContactBase_Temp].[Omni_Tactic_Final] AS [Omni_Tactic_Final], 
+    [ContactBase_Temp].[OpenGroup_ClosedGroup] AS [OpenGroup_ClosedGroup], 
+    [ContactBase_Temp].[Open_Closed_Task] AS [Open_Closed_Task], 
+    [ContactBase_Temp].[Other_SM_Urls] AS [Other_SM_Urls], 
+    [ContactBase_Temp].[Contact_Type] AS [Contact_Type], 
+    [ContactBase_Temp].[IRRep] AS [IRRep], 
+    [ContactBase_Temp].[CreatedOn] AS [CreatedOn], 
+    [ContactBase_Temp].[CreatedBy] AS [CreatedBy], 
+    [ContactBase_Temp].[LastModifiedBy] AS [LastModifiedBy], 
+    [ContactBase_Temp].[LastModifiedOn] AS [LastModifiedOn], 
+    [ContactBase_Temp].[Status] AS [Status], 
+    [ContactBase_Temp].[ApprovedBy] AS [ApprovedBy], 
+    [ContactBase_Temp].[ApprovedOn] AS [ApprovedOn], 
+    [ContactBase_Temp].[ProjectName] AS [ProjectName], 
+    [ContactBase_Temp].[TeamName] AS [TeamName], 
+    [ContactBase_Temp].[LeadSource] AS [LeadSource], 
+    [ContactBase_Temp].[MarketingProject] AS [MarketingProject], 
+    [ContactBase_Temp].[SFDCContactID] AS [SFDCContactID], 
+    [ContactBase_Temp].[CampaignId] AS [CampaignId], 
+    [ContactBase_Temp].[Mobile] AS [Mobile]
+    FROM [dbo].[ContactBase_Temp] AS [ContactBase_Temp]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__ContactBa__Accou__70DDC3D8" Association="Self.FK__ContactBa__Accou__70DDC3D8">
+      <End Role="AccountBase" EntitySet="AccountBase" />
+      <End Role="ContactBase" EntitySet="ContactBase" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

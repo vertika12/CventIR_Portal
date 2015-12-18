@@ -1,0 +1,10 @@
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.DAL\bin\Debug\DataManager.DAL.dll.config
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.DAL\bin\Debug\DataManager.DAL.dll
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.DAL\bin\Debug\DataManager.DAL.pdb
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.DAL\bin\Debug\EntityFramework.dll
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.DAL\bin\Debug\EntityFramework.xml
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.DAL\obj\Debug\DataManager.DAL.csprojResolveAssemblyReference.cache
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.DAL\obj\Debug\DataManager.DAL.dll
+C:\Users\vmahendru\Documents\Visual Studio 2013\Projects\IR_Data_portal\DataManager.DAL\obj\Debug\DataManager.DAL.pdb
