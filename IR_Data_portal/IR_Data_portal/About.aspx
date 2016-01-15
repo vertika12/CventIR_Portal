@@ -9,5 +9,6 @@
     </h2>
     <p>
         Now this project is managed over GitHub, clone using path: ssh://git@github.com:vertika12/CventIR_Portal.git or https://github.com/vertika12/CventIR_Portal.git .
+        Development Branch.
     </p>
 </asp:Content>
